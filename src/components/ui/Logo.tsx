@@ -1,0 +1,18 @@
+interface LogoMarkProps {
+  className?: string
+}
+
+export function LogoMark({ className = '' }: LogoMarkProps) {
+  return (
+    <svg
+      viewBox="0 0 64 64"
+      className={className}
+      aria-hidden="true"
+      focusable="false"
+    >
+      <rect width="64" height="64" fill="#211F20" />
+      <path d="M48 16 L52 20 L16 48 L12 44 Z" fill="#EF8D20" />
+      <path d="M52 44 L48 48 L40 48 L44 44 Z" fill="#FFFFFF" />
+    </svg>
+  )
+}

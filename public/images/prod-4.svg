@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000">
+  <defs>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#EF8D20"/>
+      <stop offset="1" stop-color="#c46f10"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="1000" fill="#2b2420"/>
+  <circle cx="800" cy="420" r="230" fill="url(#gold)"/>
+  <circle cx="800" cy="420" r="150" fill="#2b2420" fill-opacity="0.35"/>
+  <circle cx="800" cy="420" r="86" fill="none" stroke="#EF8D20" stroke-width="3"/>
+  <line x1="800" y1="80" x2="800" y2="180" stroke="#EF8D20" stroke-opacity="0.4" stroke-width="2"/>
+  <line x1="800" y1="660" x2="800" y2="760" stroke="#EF8D20" stroke-opacity="0.4" stroke-width="2"/>
+  <line x1="470" y1="420" x2="570" y2="420" stroke="#EF8D20" stroke-opacity="0.4" stroke-width="2"/>
+  <line x1="1030" y1="420" x2="1130" y2="420" stroke="#EF8D20" stroke-opacity="0.4" stroke-width="2"/>
+  <g fill="#EF8D20" fill-opacity="0.5">
+    <circle cx="300" cy="220" r="6"/>
+    <circle cx="1330" cy="760" r="8"/>
+    <circle cx="1200" cy="180" r="5"/>
+  </g>
+  <path d="M560 820 L600 860" stroke="#EF8D20" stroke-width="4"/>
+  <rect x="600" y="820" width="400" height="8" fill="#EF8D20"/>
+  <path d="M1000 820 L1040 860" stroke="#EF8D20" stroke-width="4"/>
+  <text x="120" y="960" font-family="DejaVu Sans, sans-serif" font-size="40" font-weight="bold" fill="#ffffff" fill-opacity="0.9">GOLDEN HOUR</text>
+  <text x="120" y="900" font-family="DejaVu Sans, sans-serif" font-size="22" fill="#EF8D20">Music &amp; Song</text>
+</svg>
