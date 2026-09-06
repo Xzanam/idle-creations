@@ -35,28 +35,26 @@ export function Navigation() {
 
   return (
     <header
-      className={`fixed inset-x-0 top-0 z-50 transition-all duration-500 ${
-        scrolled
+      className={`fixed inset-x-0 top-0 z-50 transition-all duration-500 ${scrolled
           ? 'border-b border-brand-charcoal/10 bg-white/85 backdrop-blur-md'
           : ''
-      }`}
+        }`}
     >
       <nav
         aria-label="Primary"
-        className={`mx-auto flex max-w-7xl items-center justify-between px-5 transition-all duration-500 sm:px-8 ${
-          scrolled ? 'py-3' : 'py-5'
-        }`}
+        className={`mx-auto flex max-w-7xl items-center justify-between px-5 transition-all duration-500 sm:px-8 ${scrolled ? 'py-3' : 'py-5'
+          }`}
       >
         <a
           href="#home"
           onClick={close}
-          className="flex items-center gap-2.5 text-brand-charcoal"
+          className={`group flex items-center gap-3 transition-opacity hover:opacity-80 ${scrolled ? 'text-brand-charcoal' : 'text-white'}`}
           aria-label="Idle Creations — home"
         >
-          <LogoMark className="h-9 w-9" />
-          <span className="font-display text-lg font-bold tracking-tight">
-            Idle<span className="text-brand-orange">.</span>Creations
-          </span>
+          <LogoMark className="h-10 w-10" />
+          {/* <span className="font-display text-lg font-bold tracking-tight"> */}
+          {/* Idle<span className="text-brand-orange transition-colors group-hover:text-brand-charcoal">.</span>Creations */}
+          {/* </span> */}
         </a>
 
         <ul className="hidden items-center gap-8 lg:flex">
@@ -64,7 +62,7 @@ export function Navigation() {
             <li key={item.href}>
               <a
                 href={item.href}
-                className="group relative text-sm font-medium text-brand-charcoal/80 transition-colors hover:text-brand-charcoal"
+                className={`group relative text-sm font-medium transition-colors ${scrolled ? 'text-brand-charcoal/80 hover:text-brand-charcoal' : 'text-white/80 hover:text-white'}`}
               >
                 {item.label}
                 <span
@@ -90,7 +88,7 @@ export function Navigation() {
             aria-expanded={open}
             aria-controls="mobile-menu"
             aria-label={open ? 'Close menu' : 'Open menu'}
-            className="inline-flex h-11 w-11 items-center justify-center border border-brand-charcoal/15 text-brand-charcoal transition-colors hover:border-brand-charcoal lg:hidden"
+            className={`inline-flex h-11 w-11 items-center justify-center border transition-colors lg:hidden ${scrolled ? 'border-brand-charcoal/15 text-brand-charcoal hover:border-brand-charcoal' : 'border-white/30 text-white hover:border-white'}`}
           >
             {open ? <X className="h-5 w-5" aria-hidden="true" /> : <Menu className="h-5 w-5" aria-hidden="true" />}
           </button>
