@@ -1,4 +1,4 @@
-import { Instagram, Youtube, Facebook, Music2 } from 'lucide-react'
+import { Instagram, Youtube, Facebook, Music2, MapPin, Mail } from 'lucide-react'
 import { LogoMark } from './ui/Logo'
 
 const FOOTER_LINKS = [
@@ -75,6 +75,28 @@ export function Footer() {
                   </a>
                 </li>
               ))}
+            </ul>
+            <ul className="mt-8 space-y-3">
+              <li>
+                <a
+                  href="https://maps.google.com/?q=2/31+Sunline+Drive,+Truganina,+VIC+3029"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-start gap-3 text-sm text-white/70 transition-colors hover:text-brand-orange"
+                >
+                  <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-brand-orange" aria-hidden="true" />
+                  <span>2/31 Sunline Drive, Truganina, VIC 3029</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="mailto:hello@idlecreations.com.au"
+                  className="flex items-center gap-3 text-sm text-white/70 transition-colors hover:text-brand-orange"
+                >
+                  <Mail className="h-4 w-4 shrink-0 text-brand-orange" aria-hidden="true" />
+                  <span>hello@idlecreations.com.au</span>
+                </a>
+              </li>
             </ul>
             <a
               href="#talent"
