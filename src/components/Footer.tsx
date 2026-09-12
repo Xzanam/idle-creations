@@ -1,4 +1,4 @@
-import { Instagram, Youtube, Facebook, Music2, MapPin, Mail } from 'lucide-react'
+import { Youtube, Facebook, MapPin, Mail } from 'lucide-react'
 import { LogoMark } from './ui/Logo'
 
 const FOOTER_LINKS = [
@@ -11,10 +11,10 @@ const FOOTER_LINKS = [
 ]
 
 const SOCIALS = [
-  { icon: Instagram, label: 'Instagram', href: 'https://instagram.com' },
+  // { icon: Instagram, label: 'Instagram', href: 'https://instagram.com' },
   { icon: Youtube, label: 'YouTube', href: 'https://www.youtube.com/@IdleCreation' },
-  { icon: Facebook, label: 'Facebook', href: 'https://facebook.com' },
-  { icon: Music2, label: 'Music', href: '#' },
+  { icon: Facebook, label: 'Facebook', href: 'https://www.facebook.com/idlecreation/' },
+  // { icon: Music2, label: 'Music', href: '#' },
 ]
 
 export function Footer() {
@@ -111,7 +111,7 @@ export function Footer() {
       <div className="border-t border-white/10">
         <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-3 px-5 py-6 sm:flex-row sm:px-8">
           <p className="text-xs text-white/40">
-            © {new Date().getFullYear()} Idle Creations. All rights reserved.
+            © {2019} Idle Creations. All rights reserved.
           </p>
           <p className="font-display text-[11px] uppercase tracking-[0.25em] text-white/40">
             Talent · Music · Video · Performance

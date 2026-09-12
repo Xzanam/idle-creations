@@ -4,61 +4,52 @@ import { Reveal, SectionHeading } from './ui/motion'
 import { Lightbox, type LightboxImage } from './ui/Lightbox'
 
 interface ShowcaseItem extends LightboxImage {
-  ratio: string
   note?: string
   featured?: boolean
 }
 
 const ITEMS: ShowcaseItem[] = [
   {
-    image: '/images/events/sydney-damian-night.jpg',
-    title: 'Sydney Damian Night',
+    image: '/images/events/sydney-dami-night.jpg',
+    title: 'Sydney Dami Night',
     category: 'Live Event',
     note: 'A full night of music, performance and energy in Sydney.',
-    ratio: 'aspect-[1920/1005]',
     featured: true,
   },
   {
     image: '/images/events/dj-arpana.jpg',
     title: 'DJ Arpana',
     category: 'Live DJ Set',
-    ratio: 'aspect-[1447/2048]',
   },
   {
     image: '/images/events/dohori-night.jpg',
     title: 'Dohori Night',
     category: 'Live Performance',
-    ratio: 'aspect-[1663/2048]',
   },
   {
     image: '/images/events/ethos-band.jpg',
     title: 'Ethos Band',
     category: 'Live Music',
-    ratio: 'aspect-[1131/1600]',
   },
   {
     image: '/images/films/film-poster.jpg',
-    title: 'Feature Film',
-    category: 'Film Poster',
-    ratio: 'aspect-[1080/1350]',
+    title: 'तोर बिना नै रहवु',
+    category: 'Short Film'
   },
   {
     image: '/images/films/laibari-lai.jpg',
-    title: 'Laibari Lai',
+    title: 'Laibariney Batas',
     category: 'Music Video',
-    ratio: 'aspect-[904/1280]',
   },
-  {
-    image: '/images/films/pipal.jpg',
-    title: 'Pipal',
-    category: 'Music Video',
-    ratio: 'aspect-[1244/1600]',
-  },
+  // {
+  //   image: '/images/films/pipal.jpg',
+  //   title: 'Pipal',
+  //   category: 'Music Video',
+  // },
   {
     image: '/images/films/somaya.jpg',
-    title: 'Somaya',
+    title: 'So Maya Sosita',
     category: 'Music Video',
-    ratio: 'aspect-[1131/1600]',
   },
 ]
 
@@ -77,7 +68,7 @@ function Tile({
       onClick={onOpen}
       aria-label={`Open enlarged view of ${item.title} — ${item.category}`}
       className={`group relative block w-full cursor-zoom-in overflow-hidden bg-brand-charcoal text-left ${
-        featured ? 'aspect-[1920/1005]' : item.ratio
+        featured ? 'aspect-[1920/1005]' : 'aspect-[3/4]'
       }`}
     >
       <img

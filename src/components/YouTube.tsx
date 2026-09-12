@@ -62,7 +62,7 @@ export function YouTube() {
             >
               <div className="aspect-[1920/1005] overflow-hidden">
                 <img
-                  src="/images/events/sydney-damian-night.jpg"
+                  src="/images/events/TOHORFILM.jpg"
                   alt="A live Idle Creations event, viewable in full on their YouTube channel"
                   loading="lazy"
                   decoding="async"
