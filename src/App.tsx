@@ -6,7 +6,9 @@ import { Values } from './components/Values'
 import { Services } from './components/Services'
 import { Talent } from './components/Talent'
 import { Productions } from './components/Productions'
+import { EventsShowcase } from './components/EventsShowcase'
 import { Stats } from './components/Stats'
+import { YouTube } from './components/YouTube'
 import { CTA } from './components/CTA'
 import { Contact } from './components/Contact'
 import { Footer } from './components/Footer'
@@ -29,7 +31,9 @@ export default function App() {
         <Services />
         <Talent />
         <Productions />
+        <EventsShowcase />
         <Stats />
+        <YouTube />
         <CTA />
         <Contact />
       </main>

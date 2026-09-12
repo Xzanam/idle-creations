@@ -12,7 +12,7 @@ const FOOTER_LINKS = [
 
 const SOCIALS = [
   { icon: Instagram, label: 'Instagram', href: 'https://instagram.com' },
-  { icon: Youtube, label: 'YouTube', href: 'https://youtube.com' },
+  { icon: Youtube, label: 'YouTube', href: 'https://www.youtube.com/@IdleCreation' },
   { icon: Facebook, label: 'Facebook', href: 'https://facebook.com' },
   { icon: Music2, label: 'Music', href: '#' },
 ]
