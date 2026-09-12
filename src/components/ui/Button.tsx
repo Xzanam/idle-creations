@@ -9,6 +9,8 @@ interface ButtonProps {
   onClick?: () => void
   className?: string
   type?: 'button' | 'submit'
+  target?: string
+  rel?: string
 }
 
 export function Button({
@@ -19,6 +21,8 @@ export function Button({
   onClick,
   className = '',
   type = 'button',
+  target,
+  rel,
 }: ButtonProps) {
   const base =
     'group inline-flex items-center justify-center gap-2 font-display text-sm font-semibold uppercase tracking-[0.12em] transition-colors duration-300'
@@ -43,7 +47,7 @@ export function Button({
   }
 
   return (
-    <a href={href} onClick={onClick} className={`${base} ${variants[variant]} ${className}`}>
+    <a href={href} onClick={onClick} target={target} rel={rel} className={`${base} ${variants[variant]} ${className}`}>
       {children}
       {Icon && <Icon className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" aria-hidden="true" />}
     </a>

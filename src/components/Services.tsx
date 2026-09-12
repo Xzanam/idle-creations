@@ -68,11 +68,11 @@ function ServiceItem({ service }: { service: (typeof SERVICES)[number] }) {
           {service.number}
         </span>
         <div className="flex items-center gap-3">
-          <p className="hidden text-base leading-relaxed text-brand-gray md:block md:max-w-xs lg:max-w-sm">
+          <p className="hidden text-base leading-relaxed text-white/60 md:block md:max-w-xs lg:max-w-sm">
             {service.text}
           </p>
           <Icon
-            className={`h-6 w-6 text-brand-charcoal transition-colors duration-300 ${
+            className={`h-6 w-6 text-white/90 transition-colors duration-300 ${
               hovered ? 'text-brand-orange' : ''
             }`}
             aria-hidden="true"
@@ -81,7 +81,7 @@ function ServiceItem({ service }: { service: (typeof SERVICES)[number] }) {
       </div>
 
       <div className="flex items-center justify-between">
-        <h3 className="font-display text-3xl font-bold leading-none tracking-tightest text-brand-charcoal transition-colors duration-300 group-hover:text-brand-orange sm:text-4xl md:text-5xl">
+        <h3 className="font-display text-3xl font-bold leading-none tracking-tightest text-white transition-colors duration-300 group-hover:text-brand-orange sm:text-4xl md:text-5xl">
           {service.title}
         </h3>
         <ArrowUpRight
@@ -99,7 +99,7 @@ function ServiceItem({ service }: { service: (typeof SERVICES)[number] }) {
         style={{ transformOrigin: 'left' }}
         className="h-0.5 w-full"
       >
-        <div className="h-full w-full bg-brand-charcoal" />
+        <div className="h-full w-full bg-white/80" />
       </motion.div>
     </div>
   )
@@ -107,12 +107,12 @@ function ServiceItem({ service }: { service: (typeof SERVICES)[number] }) {
 
 export function Services() {
   return (
-    <section id="services" className="bg-brand-light py-24 lg:py-36">
+    <section id="services" className="bg-brand-charcoal py-24 text-white lg:py-36">
       <div className="mx-auto max-w-7xl px-5 sm:px-8">
         <div className="flex flex-col justify-between gap-8 lg:flex-row lg:items-end">
-          <SectionHeading eyebrow="Services" title="What We Do" />
+          <SectionHeading dark eyebrow="Services" title="What We Do" />
           <Reveal delay={0.1}>
-            <p className="max-w-md text-base leading-relaxed text-brand-gray lg:pb-2">
+            <p className="max-w-md text-base leading-relaxed text-white/60 lg:pb-2">
               Six disciplines. One creative engine. From the first spark of an idea
               to the roar of the crowd.
             </p>

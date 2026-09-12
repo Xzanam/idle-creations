@@ -2,12 +2,14 @@ import { Navigation } from './components/Navigation'
 import { Hero } from './components/Hero'
 import { Marquee } from './components/ui/Marquee'
 import { About } from './components/About'
-import { Values } from './components/Values'
+// import { Values } from './components/Values'
 import { Services } from './components/Services'
 import { Talent } from './components/Talent'
 import { Productions } from './components/Productions'
+import { EventsShowcase } from './components/EventsShowcase'
 import { Stats } from './components/Stats'
-import { CTA } from './components/CTA'
+import { YouTube } from './components/YouTube'
+// import { CTA } from './components/CTA'
 import { Contact } from './components/Contact'
 import { Footer } from './components/Footer'
 
@@ -25,12 +27,14 @@ export default function App() {
         <Hero />
         <Marquee items={['Discover', 'Create', 'Perform', 'Inspire']} />
         <About />
-        <Values />
+        {/* <Values /> */}
         <Services />
-        <Talent />
         <Productions />
+        <EventsShowcase />
         <Stats />
-        <CTA />
+        <YouTube />
+        {/* <CTA /> */}
+        <Talent />
         <Contact />
       </main>
       <Footer />

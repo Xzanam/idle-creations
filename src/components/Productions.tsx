@@ -2,31 +2,18 @@ import { Reveal, SectionHeading } from './ui/motion'
 
 const PROJECTS = [
   {
-    image: '/images/prod-1.jpg',
-    title: 'City Lights',
+    image: '/images/films/film-poster.jpg',
+    title: 'तोर बिना नै रहवु',
     category: 'Short Film',
-    text: 'A bold short film about a dancer chasing a moment beneath neon skies.',
+    text: 'A bold short film by IDLE CREATION & ENTERTAINMENT',
     trailer: '',
   },
+ 
   {
-    image: '/images/prod-2.jpg',
-    title: 'High Voltage',
-    category: 'Music Video',
-    text: 'An energetic music video built on raw performance and strobe-lit rhythm.',
-    trailer: '',
-  },
-  {
-    image: '/images/prod-3.jpg',
-    title: 'Voices in Motion',
-    category: 'Stage Programme',
-    text: 'A live stage programme uniting singers, actors and performers in one show.',
-    trailer: '',
-  },
-  {
-    image: '/images/prod-4.jpg',
-    title: 'Golden Hour',
+    image: '/images/sunya.jpg',
+    title: 'Sunya',
     category: 'Music & Song',
-    text: 'A song and visual project capturing the warmth of a golden-hour session.',
+    text: 'A song and visual project by Dreamscape and Idle Creations',
     trailer: '',
   },
 ]
