@@ -33,6 +33,18 @@ export function Navigation() {
 
   const close = () => setOpen(false)
 
+  const scrollTo = (href: string) => {
+    const el = document.querySelector(href)
+    if (!el) return
+    el.scrollIntoView({ behavior: reduce ? 'auto' : 'smooth', block: 'start' })
+  }
+
+  const handleMobileNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+    e.preventDefault()
+    close()
+    window.setTimeout(() => scrollTo(href), reduce ? 0 : 380)
+  }
+
   return (
     <header
       className={`fixed inset-x-0 top-0 z-50 transition-all duration-500 ${scrolled
@@ -119,7 +131,7 @@ export function Navigation() {
                 >
                   <a
                     href={item.href}
-                    onClick={close}
+                    onClick={(e) => handleMobileNavClick(e, item.href)}
                     className="flex items-center justify-between border-b border-brand-charcoal/8 py-3.5 font-display text-2xl font-bold tracking-tight text-brand-charcoal transition-colors hover:text-brand-orange"
                   >
                     {item.label}
@@ -130,7 +142,7 @@ export function Navigation() {
               <li className="pt-5">
                 <a
                   href="#talent"
-                  onClick={close}
+                  onClick={(e) => handleMobileNavClick(e, '#talent')}
                   className="flex items-center justify-center gap-2 bg-brand-orange px-5 py-4 font-display text-sm font-semibold uppercase tracking-[0.12em] text-white"
                 >
                   <Sparkles className="h-4 w-4" aria-hidden="true" />
