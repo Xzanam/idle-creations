@@ -23,7 +23,7 @@ const ITEMS: ShowcaseItem[] = [
   },
   {
     image: '/images/events/dohori-night.jpg',
-    title: 'Dohori Night',
+    title: 'Dohori Fest',
     category: 'Live Performance',
   },
   {
