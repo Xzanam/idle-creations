@@ -94,7 +94,7 @@ export function Footer() {
                   className="flex items-center gap-3 text-sm text-white/70 transition-colors hover:text-brand-orange"
                 >
                   <Mail className="h-4 w-4 shrink-0 text-brand-orange" aria-hidden="true" />
-                  <span>hello@idlecreations.com.au</span>
+                  <span>idlecreation@gmail.com</span>
                 </a>
               </li>
             </ul>
