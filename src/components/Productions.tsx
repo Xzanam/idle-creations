@@ -7,6 +7,7 @@ const PROJECTS = [
     category: 'Short Film',
     text: 'A bold short film by IDLE CREATION & ENTERTAINMENT',
     trailer: '',
+    link: 'https://www.youtube.com/watch?v=TNtKom13NV0',
   },
  
   {
@@ -15,7 +16,25 @@ const PROJECTS = [
     category: 'Music & Song',
     text: 'A song and visual project by Dreamscape and Idle Creations',
     trailer: '',
+    link: 'https://www.youtube.com/watch?v=Qrp77hz5vKY',
   },
+  {
+    image: '/images/films/nakkali.jpg',
+    title: 'Nakkali Maicchyang',
+    category: 'Music & Song',
+    text: 'A song and dance number by Idle Creations',
+    trailer: '',
+    link: 'https://www.youtube.com/watch?v=aGEfdNDG0Jo',
+  },
+  {
+    image: '/images/films/damphu.jpg',
+    title: 'Damphuko Taal Ramro',
+    category: 'Music & Song',
+    text: 'A music video in collaboration with Deep Studio and Idle Creations',
+    trailer: '',
+    link: 'https://www.youtube.com/watch?v=Qrp77hz5vKY',
+  },
+
 ]
 
 export function Productions() {
@@ -44,13 +63,16 @@ export function Productions() {
         <div className="mt-16 grid gap-6 lg:grid-cols-2">
           {PROJECTS.map((project, i) => (
             <Reveal key={project.title} delay={(i % 2) * 0.1}>
-              <a
-                href="#contact"
-                aria-label={`${project.title} — ${project.category}. Enquire about this production.`}
-                className={`group relative block overflow-hidden bg-brand-charcoal ${
+              <div className={`group relative block overflow-hidden bg-brand-charcoal ${
                   i % 2 === 1 ? 'lg:mt-24' : ''
-                }`}
-              >
+                }`}>
+                <a
+                  href="#contact"
+                  aria-label={`${project.title} — ${project.category}. Enquire about this production.`}
+                  className="absolute inset-0 z-0"
+                >
+                  <span className="sr-only">Enquire about this production</span>
+                </a>
                 <div className="aspect-[16/10] overflow-hidden">
                   <img
                     src={project.image}
@@ -75,17 +97,20 @@ export function Productions() {
                         {project.text}
                       </p>
                     </div>
-                    <span
-                      className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full border border-white/40 text-white transition-colors duration-300 group-hover:border-brand-orange group-hover:bg-brand-orange"
-                      aria-hidden="true"
+                    <a
+                      href={project.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label={`Watch ${project.title} on YouTube (opens in a new tab)`}
+                      className="relative z-10 flex h-12 w-12 shrink-0 items-center justify-center rounded-full border border-white/40 text-white transition-colors duration-300 group-hover:border-brand-orange group-hover:bg-brand-orange"
                     >
                       <svg viewBox="0 0 24 24" className="h-4 w-4 fill-current" focusable="false">
                         <path d="M5 3l14 9-14 9z" />
                       </svg>
-                    </span>
+                    </a>
                   </div>
                 </div>
-              </a>
+              </div>
             </Reveal>
           ))}
         </div>
